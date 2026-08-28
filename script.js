@@ -9,40 +9,39 @@ async function cargarNoticias() {
 
     if (!noticias || noticias.length === 0) return;
 
-    // 1. Renderizar Noticia Principal (Primer objeto del JSON)
+    // 1. Cargar Noticia Principal
     const principal = noticias[0];
     const elemPrincipal = document.getElementById('noticia-principal');
     
     if (elemPrincipal) {
-      elemPrincipal.innerHTML = `
-        <div class="tag-categoria">${principal.categoria}</div>
-        <h2><a href="${principal.link}" target="_blank" style="color:white; text-decoration:none;">${principal.titulo}</a></h2>
-        <p>${principal.descripcion}</p>
-        <span class="tiempo">🕒 ${principal.fecha}</span>
-      `;
+      const h1 = elemPrincipal.querySelector('h1');
+      const p = elemPrincipal.querySelector('p');
+      const small = elemPrincipal.querySelector('small');
       
-      // Aplicar imagen de fondo si está presente
+      if (h1) h1.innerHTML = `<a href="${principal.link}" target="_blank" style="color:inherit; text-decoration:none;">${principal.titulo}</a>`;
+      if (p) p.textContent = principal.descripcion;
+      if (small) small.textContent = `🕒 ${principal.fecha}`;
+
       if (principal.imagen) {
-        elemPrincipal.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('${principal.imagen}')`;
+        elemPrincipal.style.backgroundImage = `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.8)), url('${principal.imagen}')`;
         elemPrincipal.style.backgroundSize = 'cover';
-        elemPrincipal.style.backgroundPosition = 'center';
       }
     }
 
-    // 2. Renderizar Noticias Secundarias (Resto de los objetos)
+    // 2. Cargar Noticias Secundarias
     const contenedorSecundarias = document.getElementById('noticias-secundarias');
     if (contenedorSecundarias) {
-      contenedorSecundarias.innerHTML = ''; // Borra el contenido de maqueta
+      contenedorSecundarias.innerHTML = ''; 
 
       noticias.slice(1).forEach(item => {
         contenedorSecundarias.innerHTML += `
-          <div class="tarjeta-categoria">
-            <div class="bloque-categoria">${item.categoria}</div>
-            <div class="info-noticia">
+          <article class="mini-card">
+            <div class="placeholder p1">${item.categoria}</div>
+            <div class="mini-card-content">
               <h3><a href="${item.link}" target="_blank" style="color:inherit; text-decoration:none;">${item.titulo}</a></h3>
-              <span class="tiempo">🕒 ${item.fecha}</span>
+              <small>🕒 ${item.fecha}</small>
             </div>
-          </div>
+          </article>
         `;
       });
     }
