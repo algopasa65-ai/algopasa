@@ -1,10 +1,38 @@
 [
   {
     "id": 1,
-    "titulo": "Noticia cargada manualmente",
-    "fecha": "2026-08-27",
-    "imagen": "https://via.placeholder.com/600x400",
-    "descripcion": "Esta es una noticia redactada directamente en el archivo.",
-    "link": "#"
+    "categoria": "LOCALES",
+    "titulo": "Presidencia Roca avanza con obras de infraestructura",
+    "fecha": "Hace pocos minutos",
+    "descripcion": "Se iniciaron los trabajos de pavimentación y mejoras en los espacios públicos de la localidad.",
+    "imagen": "https://picsum.photos/800/500?random=1",
+    "link": "https://clarin.com"
+  },
+  {
+    "id": 2,
+    "categoria": "POLÍTICA",
+    "titulo": "Novedades de la jornada en Chaco",
+    "fecha": "Hace 1 hora",
+    "descripcion": "Reunión de gabinete para analizar los proyectos de ley presentados este mes.",
+    "imagen": "",
+    "link": "https://clarin.com"
+  },
+  {
+    "id": 3,
+    "categoria": "POLICIALES",
+    "titulo": "Información policial y de seguridad",
+    "fecha": "Hace 2 horas",
+    "descripcion": "Operativos de prevención en los accesos principales a la ciudad.",
+    "imagen": "",
+    "link": "https://clarin.com"
+  },
+  {
+    "id": 4,
+    "categoria": "DEPORTES",
+    "titulo": "Todo el deporte local y regional",
+    "fecha": "Hace 3 horas",
+    "descripcion": "Resultados de la fecha del torneo local y agenda del fin de semana.",
+    "imagen": "",
+    "link": "https://clarin.com"
   }
 ]
