@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="ALGO PASA - Edición Digital. Noticias de Presidencia Roca, Chaco y la región."
+  >
+
+  <title>ALGO PASA | Edición Digital</title>
+
+  <link rel="icon" href="assets/logo/logo-algo-pasa.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       BARRA SUPERIOR
+  =========================================== -->
+
+  <div class="top-strip">
+    <div class="container top-inner">
+
+      <span id="today">
+        Cargando fecha...
+      </span>
+
+      <span id="clock">
+        --:--:--
+      </span>
+
+      <span>
+        📍 Presidencia Roca, Chaco
+      </span>
+
+      <span id="weather">
+        🌤️ Cargando clima...
+      </span>
+
+    </div>
+  </div>
+
+
+  <!-- ==========================================
+       ENCABEZADO
+  =========================================== -->
+
+  <header class="site-header">
+
+    <div class="container header-inner">
+
+      <a
+        class="brand"
+        href="index.html"
+        aria-label="ALGO PASA inicio"
+      >
+
+        <img
+          src="assets/logo/logo-algo-pasa.png"
+          alt="Logo ALGO PASA"
+        >
+
+        <div>
+
+          <div class="brand-name">
+            ALGO <b>PASA</b>
+          </div>
+
+          <div class="brand-sub">
+            EDICIÓN DIGITAL
+          </div>
+
+        </div>
+
+      </a>
+
+
+      <div class="header-actions">
+
+        <div
+          class="socials"
+          aria-label="Redes sociales"
+        >
+
+          <a href="#" title="Facebook">
+            f
+          </a>
+
+          <a href="#" title="Instagram">
+            ◎
+          </a>
+
+          <a
+            href="https://youtube.com/@algopasa-u2b"
+            target="_blank"
+            rel="noopener"
+            title="YouTube"
+          >
+            ▶
+          </a>
+
+          <a href="#" title="WhatsApp">
+            ☏
+          </a>
+
+        </div>
+
+
+        <div class="search">
+
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar noticias..."
+          >
+
+          <button id="searchBtn">
+            ⌕
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+
+  <!-- ==========================================
+       NAVEGACIÓN
+  =========================================== -->
+
+  <nav class="main-nav">
+
+    <div class="container nav-inner">
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+      >
+        ☰ MENÚ
+      </button>
+
+
+      <div
+        class="nav-links"
+        id="navLinks"
+      >
+
+        <a class="active" href="#">
+          Inicio
+        </a>
+
+        <a href="#locales">
+          Locales
+        </a>
+
+        <a href="#politica">
+          Política
+        </a>
+
+        <a href="#policiales">
+          Policiales
+        </a>
+
+        <a href="#deportes">
+          Deportes
+        </a>
+
+        <a href="#nacionales">
+          Nacionales
+        </a>
+
+        <a href="#internacionales">
+          Internacionales
+        </a>
+
+        <a href="#economia">
+          Economía
+        </a>
+
+        <a href="#cultura">
+          Cultura
+        </a>
+
+        <a href="#campo">
+          Campo
+        </a>
+
+        <a href="#clima">
+          Clima
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+  <!-- ==========================================
+       CONTENIDO PRINCIPAL
+  =========================================== -->
+
+  <main class="container">
+
+
+    <!-- ÚLTIMA HORA -->
+
+    <div class="breaking">
+
+      <strong>
+        🔴 ÚLTIMA HORA
+      </strong>
+
+      <div id="breakingText">
+        ALGO PASA mantiene la información actualizada durante todo el día.
+      </div>
+
+    </div>
+
+
+    <!-- ==========================================
+         NOTICIA PRINCIPAL
+    =========================================== -->
+
+    <section class="hero-grid">
+
+
+      <article class="hero-card">
+
+        <div class="hero-image"></div>
+
+        <div class="hero-content">
+
+          <span class="tag">
+            LOCALES
+          </span>
+
+          <h1>
+            Presidencia Roca y la región, siempre informadas
+          </h1>
+
+          <p>
+            Este espacio mostrará la noticia principal del portal,
+            con imagen, resumen y acceso a la información completa.
+          </p>
+
+          <small>
+            ◷ Hace pocos minutos
+          </small>
+
+        </div>
+
+      </article>
+
+
+      <!-- NOTICIAS LATERALES -->
+
+      <div class="side-news">
+
+        <article class="mini-card">
+
+          <div class="placeholder p1">
+            POLÍTICA
+          </div>
+
+          <div>
+
+            <b>
+              Novedades de la jornada en Chaco
+            </b>
+
+            <small>
+              ◷ Hace 1 hora
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="mini-card">
+
+          <div class="placeholder p2">
+            POLICIALES
+          </div>
+
+          <div>
+
+            <b>
+              Información policial y de seguridad
+            </b>
+
+            <small>
+              ◷ Hace 2 horas
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="mini-card">
+
+          <div class="placeholder p3">
+            DEPORTES
+          </div>
+
+          <div>
+
+            <b>
+              Todo el deporte local y regional
+            </b>
+
+            <small>
+              ◷ Hace 3 horas
+            </small>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- ==========================================
+           EN VIVO
+      =========================================== -->
+
+      <aside class="live-card">
+
+        <div class="section-title red">
+          🔴 EN VIVO
+        </div>
+
+
+        <div class="youtube-placeholder">
+
+          <div class="play">
+            ▶
+          </div>
+
+          <b>
+            ALGO PASA EN VIVO
+          </b>
+
+          <span>
+            YouTube
+          </span>
+
+        </div>
+
+
+        <div class="live-info">
+
+          <b>
+            Próximo programa
+          </b>
+
+          <p>
+            Lunes, miércoles y viernes<br>
+            09:00 a 11:00 hs
+          </p>
+
+
+          <a
+            class="button"
+            href="https://youtube.com/@algopasa-u2b"
+            target="_blank"
+            rel="noopener"
+          >
+            ▶ Ver canal de YouTube
+          </a>
+
+        </div>
+
+      </aside>
+
+    </section>
+
+
+    <!-- ==========================================
+         LOCALES
+    =========================================== -->
+
+    <section
+      class="news-section"
+      id="locales"
+    >
+
+      <div class="section-heading">
+
+        <h2>
+          📍 LOCALES — PRESIDENCIA ROCA
+        </h2>
+
+        <a href="#">
+          Ver todas →
+        </a>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <article class="news-card">
+
+          <div class="news-img p1"></div>
+
+          <div class="news-body">
+
+            <span>
+              LOCALES
+            </span>
+
+            <h3>
+              Noticias de Presidencia Roca
+            </h3>
+
+            <p>
+              Acá aparecerán automáticamente las noticias locales aprobadas.
+            </p>
+
+            <small>
+              ◷ Hoy
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-img p2"></div>
+
+          <div class="news-body">
+
+            <span>
+              LOCALES
+            </span>
+
+            <h3>
+              Información y servicios para vecinos
+            </h3>
+
+            <p>
+              Contenido preparado para mantener activo el portal.
+            </p>
+
+            <small>
+              ◷ Hoy
+            </small>
+
+          </div>
+
+        </article>
+
+
+        <article class="news-card">
+
+          <div class="news-img p3"></div>
+
+          <div class="news-body">
+
+            <span>
+              LOCALES
+            </span>
+
+            <h3>
+              La actualidad de nuestra comunidad
+            </h3>
+
+            <p>
+              Noticias, anuncios y acontecimientos destacados.
+            </p>
+
+            <small>
+              ◷ Hoy
+            </small>
+
+          </div>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         POLICIALES / DEPORTES
+    =========================================== -->
+
+    <section class="two-col">
+
+
+      <section
+        class="news-section"
+        id="policiales"
+      >
+
+        <div class="section-heading">
+
+          <h2>
+            🚔 POLICIALES
+          </h2>
+
+          <a href="#">
+            Ver todas →
+          </a>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Información policial de la región
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Operativos y novedades
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Seguridad y prevención
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+      </section>
+
+
+      <section
+        class="news-section"
+        id="deportes"
+      >
+
+        <div class="section-heading">
+
+          <h2>
+            ⚽ DEPORTES
+          </h2>
+
+          <a href="#">
+            Ver todas →
+          </a>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Todo el deporte local
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Resultados y protagonistas
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+
+        <div class="list-card">
+
+          <b>
+            Agenda deportiva
+          </b>
+
+          <small>
+            ◷ Actualizado hoy
+          </small>
+
+        </div>
+
+      </section>
+
+
+    </section>
+
+
+    <!-- ==========================================
+         VIDEOS
+    =========================================== -->
+
+    <section class="video-section">
+
+      <div class="section-heading">
+
+        <h2>
+          🎥 ÚLTIMOS VIDEOS
+        </h2>
+
+        <a
+          href="https://youtube.com/@algopasa-u2b/videos"
+          target="_blank"
+          rel="noopener"
+        >
+          Ver canal →
+        </a>
+
+      </div>
+
+
+      <div class="video-grid">
+
+        <div class="video-placeholder">
+
+          ▶
+
+          <span>
+            Último video de ALGO PASA
+          </span>
+
+        </div>
+
+
+        <div class="video-placeholder">
+
+          ▶
+
+          <span>
+            Entrevistas y actualidad
+          </span>
+
+        </div>
+
+
+        <div class="video-placeholder">
+
+          ▶
+
+          <span>
+            Programas anteriores
+          </span>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         CATEGORÍAS
+    =========================================== -->
+
+    <section class="categories-grid">
+
+
+      <div id="politica">
+
+        <h2>
+          🏛️ POLÍTICA
+        </h2>
+
+        <p>
+          Novedades políticas de Chaco y la región.
+        </p>
+
+      </div>
+
+
+      <div id="nacionales">
+
+        <h2>
+          🌎 NACIONALES
+        </h2>
+
+        <p>
+          Las principales noticias del país.
+        </p>
+
+      </div>
+
+
+      <div id="internacionales">
+
+        <h2>
+          🌐 INTERNACIONALES
+        </h2>
+
+        <p>
+          Información internacional destacada.
+        </p>
+
+      </div>
+
+
+      <div id="economia">
+
+        <h2>
+          💰 ECONOMÍA
+        </h2>
+
+        <p>
+          Economía, precios y actividad productiva.
+        </p>
+
+      </div>
+
+
+      <div id="cultura">
+
+        <h2>
+          🎭 CULTURA
+        </h2>
+
+        <p>
+          Agenda cultural y comunitaria.
+        </p>
+
+      </div>
+
+
+      <div id="campo">
+
+        <h2>
+          🚜 CAMPO
+        </h2>
+
+        <p>
+          Actualidad agropecuaria y rural.
+        </p>
+
+      </div>
+
+
+    </section>
+
+
+    <!-- ==========================================
+         CLIMA DINÁMICO
+    =========================================== -->
+
+    <section
+      class="weather-panel"
+      id="clima"
+    >
+
+      <div>
+
+        <div class="weather-big">
+
+          <span id="weatherIcon">
+            🌤️
+          </span>
+
+          <strong id="weatherTemp">
+            --°C
+          </strong>
+
+        </div>
+
+
+        <p id="weatherDescription">
+          Cargando clima...
+        </p>
+
+      </div>
+
+
+      <div class="weather-stats">
+
+        <span>
+          Máx.
+          <b id="weatherMax">
+            --°C
+          </b>
+        </span>
+
+
+        <span>
+          Mín.
+          <b id="weatherMin">
+            --°C
+          </b>
+        </span>
+
+
+        <span>
+          Humedad
+          <b id="weatherHumidity">
+            --%
+          </b>
+        </span>
+
+
+        <span>
+          Viento
+          <b id="weatherWind">
+            -- km/h
+          </b>
+        </span>
+
+      </div>
+
+    </section>
+
+
+    <!-- ==========================================
+         PUBLICIDAD
+    =========================================== -->
+
+    <section class="ad-rotator">
+
+      <div class="ad ad1">
+        ESPACIO PUBLICITARIO
+      </div>
+
+      <div class="ad ad2">
+        TU PUBLICIDAD AQUÍ
+      </div>
+
+      <div class="ad ad3">
+        ANUNCIÁ EN ALGO PASA
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+  <!-- ==========================================
+       PIE DE PÁGINA
+  =========================================== -->
+
+  <footer>
+
+    <div class="container footer-grid">
+
+
+      <div>
+
+        <img
+          src="assets/logo/logo-algo-pasa.png"
+          alt="Logo ALGO PASA"
+          class="footer-logo"
+        >
+
+        <h3>
+          ALGO PASA — EDICIÓN DIGITAL
+        </h3>
+
+        <p>
+          Noticias de Presidencia Roca, Chaco y la región.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Secciones
+        </h4>
+
+        <p>
+          Locales · Política · Policiales · Deportes ·
+          Nacionales · Internacionales
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Información
+        </h4>
+
+        <p>
+          Quiénes somos · Contacto · Publicidad · Privacidad
+        </p>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="copyright">
+      © 2026 ALGO PASA — Edición Digital
+    </div>
+
+  </footer>
+
+
+  <!-- ==========================================
+       SCRIPTS
+  =========================================== -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>

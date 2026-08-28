@@ -1,0 +1,10 @@
+[
+  {
+    "id": 1,
+    "titulo": "Noticia cargada manualmente",
+    "fecha": "2026-08-27",
+    "imagen": "https://via.placeholder.com/600x400",
+    "descripcion": "Esta es una noticia redactada directamente en el archivo.",
+    "link": "#"
+  }
+]
